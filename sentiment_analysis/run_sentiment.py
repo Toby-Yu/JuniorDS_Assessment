@@ -1,6 +1,14 @@
 # sentiment_analysis/run_sentiment.py
 import sys
 import os
+
+# Load .env early
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from sklearn.model_selection import train_test_split

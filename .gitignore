@@ -1,0 +1,18 @@
+# Python virtual environment
+venv/
+
+# Environment variables (secrets)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.vscode/
+.idea/
+
+# Generated images
+sentiment_comparison.png
+*.png
