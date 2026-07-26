@@ -1,4 +1,4 @@
-# Car Review Analysis - ThinkCol Jr DS Interview
+# Car Review Analysis
 
 This project provides a complete pipeline for **\*\*sentiment analysis\*\*** and **\*\*topic extraction\*\*** on a dataset of car reviews. Two approaches are implemented:
 
