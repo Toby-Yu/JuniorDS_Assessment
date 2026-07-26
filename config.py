@@ -1,10 +1,13 @@
-# config.py
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
-HF_TOKEN = os.getenv("HF_TOKEN")
-if not HF_TOKEN:
-    print("WARNING: HF_TOKEN environment variable not set. LLM calls will fail.")
-    print("Set it via .env file or export HF_TOKEN='your_token'")
+SILICONFLOW_API_KEY = os.getenv("SILICONFLOW_API_KEY")
+if not SILICONFLOW_API_KEY:
+    print("ERROR: SILICONFLOW_API_KEY not set. Add it to .env")
+    exit(1)
 
-API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1"
+SILICONFLOW_URL = "https://api.siliconflow.cn/v1/chat/completions"
+SILICONFLOW_MODEL = "deepseek-ai/DeepSeek-V4-Flash"
+
 TRAIN_FILE = "data/train.txt"

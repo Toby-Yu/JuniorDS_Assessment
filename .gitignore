@@ -12,7 +12,3 @@ __pycache__/
 # IDE files
 .vscode/
 .idea/
-
-# Generated images
-sentiment_comparison.png
-*.png

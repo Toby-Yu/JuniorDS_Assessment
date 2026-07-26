@@ -1,0 +1,5 @@
+Topic 0: ha | power | engine | taurus | wheel | rear | model | door | look | control
+Topic 1: wa | transmission | repair | replaced | month | warranty | went | dealership | bought | service
+Topic 2: mustang | gt | sport | convertible | cobra | v6 | fun | look | performance | power
+Topic 3: explorer | suv | expedition | sport | road | ha | wa | love | ride | gas
+Topic 4: windstar | minivan | door | mini | kid | caravan | sliding | safety | child | family

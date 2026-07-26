@@ -1,0 +1,8 @@
+Topic 0: ha | focus | rear | power | engine | door | wheel | control | interior | model
+Topic 1: wa | transmission | month | warranty | replaced | dealership | went | repair | took | service
+Topic 2: mustang | gt | sport | convertible | cobra | fun | v6 | look | power | performance
+Topic 3: explorer | suv | sport | ha | road | tire | ride | love | utility | recommend
+Topic 4: windstar | minivan | door | mini | sliding | caravan | kid | safety | family | child
+Topic 5: taurus | ha | family | transmission | repair | wagon | engine | reliable | trunk | 91
+Topic 6: ranger | cab | ha | bed | 4x4 | love | pickup | extended | want | bought
+Topic 7: expedition | suv | excursion | kid | row | gas | big | room | large | suburban

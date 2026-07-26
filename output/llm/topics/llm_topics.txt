@@ -1,0 +1,15 @@
+Cluster 0: Ford vehicle reviews
+Summary: Customers frequently complain about reliability issues, frequent breakdowns, and costly repairs, with the Ford Windstar being a particularly common source of dissatisfaction. Some praise exists for models like the Probe and Escort for their longevity and value. The business should prioritize improving quality control and addressing known issues in models like the Windstar to enhance customer satisfaction.
+
+Cluster 1: Ford car reviews
+Summary: Customers often praise the Ford Mustang for its performance and styling, while complaints arise about reliability in models like the Escort ZX2. The Mustang, Escort, and Focus are frequently mentioned. Ford should work on improving reliability and interior quality to address common complaints.
+
+Cluster 2: Ford trucks and SUVs
+Summary: Customers praise Ford trucks and SUVs for their reliability, versatility, and comfort, but some complain about poor fuel economy and large size. The Ford F-150 and Ranger are frequently mentioned, along with the Bronco and Econoline vans. The business should consider improving fuel efficiency and offering more size variants to appeal to a wider range of customers.
+
+Cluster 3: Ford vehicle reviews
+Summary: Customers praise Ford vehicles for their spaciousness, towing capability, and handling, but complain about poor fuel economy and a lack of luxury feel in some models. Frequently mentioned models include the Ford Explorer, Windstar, Escape, and Focus. Ford should focus on improving fuel efficiency across its SUV lineup and enhancing interior quality to better compete with rivals.
+
+Cluster 4: Ford Taurus reviews
+Summary: Customers praise the Ford Taurus for its comfort, space, and ride quality, but frequently complain about transmission and engine issues, as well as overall reliability. Models from the 1990s, particularly the 1991 and 1995, are often mentioned. The business should prioritize improving transmission durability to address recurring complaints.
+
