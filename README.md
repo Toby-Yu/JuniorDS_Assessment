@@ -1,10 +1,10 @@
-\# Car Review Analysis - ThinkCol Jr DS Interview
+# Car Review Analysis - ThinkCol Jr DS Interview
 
 This project provides a complete pipeline for **\*\*sentiment analysis\*\*** and **\*\*topic extraction\*\*** on a dataset of car reviews. Two approaches are implemented:
 
-\- **\*\*Machine Learning (ML)\*\***: Logistic Regression + TF‑IDF for sentiment, NMF/TF‑IDF with Coherence for topic extraction.
+**\*\*Machine Learning (ML)\*\***: Logistic Regression + TF‑IDF for sentiment, NMF/TF‑IDF with Coherence for topic extraction.
 
-\- **\*\*Generative AI (LLM)\*\***: Few‑shot prompting via SiliconFlow API (DeepSeek‑V4‑Flash) for sentiment, embedding + clustering + LLM naming for topics.
+**\*\*Generative AI (LLM)\*\***: Few‑shot prompting via SiliconFlow API (DeepSeek‑V4‑Flash) for sentiment, embedding + clustering + LLM naming for topics.
 
 All outputs are saved under \`output/\` and a comparison of sentiment results is automatically generated.
 
@@ -46,34 +46,36 @@ JuniorDS_Assessment/
 ├── requirements.txt  
 └── README.md
 
-\## Setup
+## Setup
 
 1\. \*\*Clone the repository\*\* (or download and extract the project).
 
 2\. \*\*Create and activate a virtual environment\*\*:
 
-\`\`\`bash
+```bash
 
 python -m venv venv
 
 source venv/bin/activate # Mac/Linux
 
 venv\\Scripts\\activate # Windows
+```
+
 
 - **Install dependencies**:
 
-bash
-
+```bash
 pip install -r requirements.txt
+```
 
 - **Set up the SiliconFlow API key**:
   - Create a .env file in the project root with the following content:
 
-text
-
+```text
 SILICONFLOW_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
 
-- - You can obtain a free key from [SiliconFlow](https://siliconflow.cn/). The model deepseek-ai/DeepSeek-V4-Flash is used.
+- You can obtain a free key from [SiliconFlow](https://siliconflow.cn/). The model deepseek-ai/DeepSeek-V4-Flash is used.
 
 - **Place the dataset** train.txt inside the data/ folder.
 
@@ -81,11 +83,12 @@ SILICONFLOW_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 **1\. ML Approach - Sentiment**
 
-bash
+```bash
 
 python -m ml_approach.sentiment.train
 
 python -m ml_approach.sentiment.evaluate
+```
 
 - Trains a Logistic Regression model on TF‑IDF features.
 - Evaluates on the full test set (245 reviews).
@@ -93,29 +96,31 @@ python -m ml_approach.sentiment.evaluate
 
 **2\. ML Approach - Topic Extraction**
 
-bash
+```bash
 
 python -m ml_approach.topics.extract_topics
+```
 
 - Fits NMF for K = 5 … 15, computes coherence (c_v).
 - Saves coherence scores (coherence_scores.csv, coherence_vs_K.png).
 - Saves top 2 topic models (word lists) in output/ml/topics/.
 - Optionally generates a UMAP visualization.
 
+
 **3\. LLM Approach - Sentiment**
 
-bash
-
+```bash
 python -m llm_approach.sentiment.run_sentiment
+```
 
 - Uses few‑shot prompting to classify all 245 test reviews.
 - Saves predictions, metrics, and confusion matrix in output/llm/sentiment/.
 
 **4\. LLM Approach - Topic Extraction**
 
-bash
-
+```bash
 python -m llm_approach.topics.run_topics
+```
 
 - Embeds reviews with all-MiniLM-L6-v2, fits K‑Means for K=5…15, selects K via Calinski‑Harabasz index.
 - For the optimal K, samples up to 20 reviews per cluster and asks the LLM for a topic name and a business‑insight summary.
@@ -123,9 +128,9 @@ python -m llm_approach.topics.run_topics
 
 **5\. Sentiment Comparison**
 
-bash
-
+```bash
 python -m comparison.compare_sentiment
+```
 
 - Reads metrics.csv from both ML and LLM sentiment folders.
 - Produces a side‑by‑side metrics table (comparison_metrics.csv) and a grouped bar chart (sentiment_comparison.png) in output/comparison/.
